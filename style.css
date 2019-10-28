@@ -13,12 +13,41 @@ a.navbar-brand{
 
 .poster{
     height: 30%;
-    width: 30%;
+    width: 50%;
 }
 
 
 .navbar-default .navbar-nav > li >a {
     color: #e74c3c;
+}
+
+.selector {
+    cursor: pointer;
+    display: inline;
+}
+
+.create {
+    color: darkgreen;
+}
+
+.update {
+    color: blue;
+}
+
+.delete {
+    color: red;
+}
+
+.modal {
+    visibility: hidden;
+    border-radius: 5px;
+}
+
+.navbar {
+    background-color: midnightblue;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
 }
 
 .navbar .navbar-nav .nav-link {
