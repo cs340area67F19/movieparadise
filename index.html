@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title> Welcome to Movie Paradise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-expand-md fixed-top">
@@ -42,9 +44,13 @@
                 <td class="poster"><a href="movieInfo.html"><img class="poster" src="images/p651_v_v8_az.jpg" alt="Casablanca"/></td>
                 <td><a href="movieInfo.html">Casablanca</a></td>
                 <td>
-                    <div class="selector"><a class="create" href="CUD.html">Create</a></div>
-                    <div class="selector"><a class="update" href="CUD.html">Update</a</div>
-                    <div class="selector"><a class="delete" href="CUD.html">Delete</a></div>
+                    <div class="selector create" onclick="modalShow()">Create</div>
+                    <div class="selector update" onclick="modalShow()">Update</div>
+                    <div class="selector delete" onclick="modalShow()">Delete</div>
+
+                    <!-- <div class="selector"><a class="create" href="CUD.html">Create</a></div>
+                    <div class="selector"><a class="update" href="CUD.html">Update</a></div>
+                    <div class="selector"><a class="delete" href="CUD.html">Delete</a></div> -->
                 </td>
             </tr>      
         </tbody>
@@ -52,8 +58,12 @@
     
 </body>
 <footer>
-    <div class="modal">
-        This is a modal where we might update?
+    <div id="myModal" class="modal" style="display: none;">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This is a modal where someone can create/update/delete an entry</p>
+        </div>
     </div>
 </footer>
     
