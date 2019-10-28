@@ -1,0 +1,13 @@
+.navbar {
+    background-color: darkgray;
+    border-width: 1px;
+    border-color: black;
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.nav-link {
+    color: black;
+}
