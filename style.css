@@ -1,13 +1,39 @@
-.navbar {
-    background-color: darkgray;
-    border-width: 1px;
-    border-color: black;
+body {
+    padding-top: 52px;
+    height: 100%;
+    font-family: Volkhov, serif;
 }
 
-.navbar-brand {
-    color: black;
+a.navbar-brand{
+    text-transform: uppercase;
+    color: #e74c3c;
+    font-size: 1.4em;
+    font-weight: 600;
 }
 
-.nav-link {
-    color: black;
+.poster{
+    height: 30%;
+    width: 30%;
+}
+
+
+.navbar-default .navbar-nav > li >a {
+    color: #e74c3c;
+}
+
+.navbar .navbar-nav .nav-link {
+    border-radius: .25rem;
+    margin: 0 0.25em;
+    text-transform: uppercase;
+}
+
+
+th,td{
+    padding: 35px;
+    text-align: left;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
 }
