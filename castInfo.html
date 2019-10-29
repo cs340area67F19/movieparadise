@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title> Welcome to Movie Paradise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <br>
@@ -30,12 +32,32 @@
         </ul>
     </nav>
     
-    <div class="outer_div">
-        <div class="inner_div" align=center>This is Humphrey Bogart</div>
-    </div>
-    <br />
     
+    <ul>
+        <li>Name:   </li>
+        <li>BOD:    </li>
+        <li>Age:    </li>
+        <li>Gender: </li>
+        <li>Country:</li>  
+        <li>
+             <div class="selector update" onclick="modalShow()">Update</div>
+             <!-- <div class="selector"><a class="create" href="CUD.html">Create</a></div>
+            <div class="selector"><a class="update" href="CUD.html">Update</a></div>
+            <div class="selector"><a class="delete" href="CUD.html">Delete</a></div> -->
+        </li> 
+
+    </ul> 
+
 </body>
+<footer>
+    <div id="myModal" class="modal" style="display: none;">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This is a modal where someone can create/update/delete an entry</p>
+        </div>
+    </div>
+</footer>
     
 </html>
 

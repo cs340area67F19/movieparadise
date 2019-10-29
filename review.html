@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title> Welcome to Movie Paradise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <br>
@@ -29,14 +31,55 @@
             </li>
         </ul>
     </nav>
+
     
-    <ul>
-        <li>review 1</li>
-        <li>review 2</li>
-        <li>review 3</li>
-        <li>review 4</li>  
-    </ul>
+    <table cellpadding="10" border="1"  style="width:75%">
+        <thead>
+            <tr>
+                <th>Content</th>
+                <th>Reviewer</th>
+                <th>Functionalities</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>This movie is amazing!!!!!!!!!</td>
+                <td><a href="userProfile.html">Iris</a></td>
+                <td>
+                    <div class="selector create" onclick="modalShow()">Create</div>
+                    <div class="selector update" onclick="modalShow()">Update</div>
+                    <div class="selector delete" onclick="modalShow()">Delete</div>
+
+                    <!-- <div class="selector"><a class="create" href="CUD.html">Create</a></div>
+                    <div class="selector"><a class="update" href="CUD.html">Update</a></div>
+                    <div class="selector"><a class="delete" href="CUD.html">Delete</a></div> -->
+                </td>
+            </tr>
+                        <tr>
+                <td>I love this movie</td>
+                <td>Justin</td>
+                <td>
+                    <div class="selector create" onclick="modalShow()">Create</div>
+                    <div class="selector update" onclick="modalShow()">Update</div>
+                    <div class="selector delete" onclick="modalShow()">Delete</div>
+
+                    <!-- <div class="selector"><a class="create" href="CUD.html">Create</a></div>
+                    <div class="selector"><a class="update" href="CUD.html">Update</a></div>
+                    <div class="selector"><a class="delete" href="CUD.html">Delete</a></div> -->
+                </td>
+            </tr>   
+        </tbody>
+    </table>
     
 </body>
+<footer>
+    <div id="myModal" class="modal" style="display: none;">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>This is a modal where someone can create/update/delete an entry</p>
+        </div>
+    </div>
+</footer>
     
 </html>
