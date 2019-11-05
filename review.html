@@ -29,6 +29,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
             </li>
+            <li class="nav-item" style="margin-top: 7px">
+                <input placeholder="Filter Reviews..."> <button type="submit">Search</button>
+            </li> 
         </ul>
     </nav>
 
@@ -46,9 +49,9 @@
                 <td>This movie is amazing!!!!!!!!!</td>
                 <td><a href="userProfile.html">Iris</a></td>
                 <td>
-                    <div class="selector create" onclick="modalShow()">Create</div>
-                    <div class="selector update" onclick="modalShow()">Update</div>
-                    <div class="selector delete" onclick="modalShow()">Delete</div>
+                    <div class="selector create" onclick="modalShow('create')">Create</div>
+                    <div class="selector update" onclick="modalShow('update')">Update</div>
+                    <div class="selector delete" onclick="modalShow('delete')">Delete</div>
 
                     <!-- <div class="selector"><a class="create" href="CUD.html">Create</a></div>
                     <div class="selector"><a class="update" href="CUD.html">Update</a></div>
@@ -59,9 +62,9 @@
                 <td>I love this movie</td>
                 <td>Justin</td>
                 <td>
-                    <div class="selector create" onclick="modalShow()">Create</div>
-                    <div class="selector update" onclick="modalShow()">Update</div>
-                    <div class="selector delete" onclick="modalShow()">Delete</div>
+                    <div class="selector create" onclick="modalShow('create')">Create</div>
+                    <div class="selector update" onclick="modalShow('update')">Update</div>
+                    <div class="selector delete" onclick="modalShow('delete')">Delete</div>
 
                     <!-- <div class="selector"><a class="create" href="CUD.html">Create</a></div>
                     <div class="selector"><a class="update" href="CUD.html">Update</a></div>
@@ -77,7 +80,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>This is a modal where someone can create/update/delete an entry</p>
+            <!-- <p>This is a modal where someone can create/update/delete an entry</p> -->
         </div>
     </div>
 </footer>
