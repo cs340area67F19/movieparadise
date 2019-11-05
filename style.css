@@ -24,18 +24,24 @@ a.navbar-brand{
 .selector {
     cursor: pointer;
     display: inline;
+    cursor: pointer;
+    display: inline;
+    border: solid 1px black;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
 }
 
 .create {
-    color: darkgreen;
+    background-color: limegreen;
 }
 
 .update {
-    color: blue;
+    background-color: royalblue;
 }
 
 .delete {
-    color: red;
+    background-color: red;
 }
 
 .modal {
@@ -57,6 +63,11 @@ a.navbar-brand{
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.Button {
+    display: inline;
+    width: 30%;
 }
 
 /* The Close Button */

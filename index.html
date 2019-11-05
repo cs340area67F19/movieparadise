@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
     <link href="style.css" rel="stylesheet" type="text/css">
     <script src="js/index.js"></script>
 </head>
@@ -29,7 +30,7 @@
                 <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item" style="margin-top: 7px">
-                <input> <button type="submit">Search</button>
+                <input placeholder="Filter Movies..."> <button type="submit">Search</button>
             </li>
         </ul>
     </nav>
@@ -47,9 +48,9 @@
                 <td class="poster"><a href="movieInfo.html"><img class="poster" src="images/p651_v_v8_az.jpg" alt="Casablanca"/></a></td>
                 <td><a href="movieInfo.html">Casablanca</a></td>
                 <td>
-                    <div class="selector create" onclick="modalShow()">Create</div>
-                    <div class="selector update" onclick="modalShow()">Update</div>
-                    <div class="selector delete" onclick="modalShow()">Delete</div>
+                    <div onclick="modalShow('create')" class="selector create">Create</div>
+                    <div onclick="modalShow('update')" class="selector update">Update</div>
+                    <div onclick="modalShow('delete')" class="selector delete">Delete</div>
 
                     <!-- <div class="selector"><a class="create" href="CUD.html">Create</a></div>
                     <div class="selector"><a class="update" href="CUD.html">Update</a></div>
@@ -65,7 +66,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>This is a modal where someone can create/update/delete an entry</p>
+            <!-- <p>This is a modal where someone can create/update/delete an entry!</p> -->
         </div>
     </div>
 </footer>
