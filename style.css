@@ -12,10 +12,31 @@ a.navbar-brand{
 }
 
 .poster{
-    height: 30%;
-    width: 50%;
+    width: 80%;
 }
 
+.info-poster{
+    height: 40%;
+    width: 40%;
+}
+
+fieldset {
+    display: block;
+
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;  
+    padding-right: 0.75em;
+
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
+    
+  
+}
 
 .navbar-default .navbar-nav > li >a {
     color: #e74c3c;
@@ -111,4 +132,12 @@ table {
 * {
     padding: 0px;
     margin: 0px;
+}
+
+.review-table{
+    margin-top:5%;
+}
+
+.outer-box {
+     border-style: none;  
 }

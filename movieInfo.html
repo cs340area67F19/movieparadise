@@ -28,22 +28,36 @@
             <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item" style="margin-top: 7px"> 
-                <input placeholder="Filter Movies..."> <button type="submit">Search</button>
-            </li>
         </ul>
     </nav>
     <br>
-
-    <ul align="center">
+    <fieldset class= "outer-box">
+    <fieldset>
+        <li style="list-style-type:none" class="poster"><a href="movieInfo.html"><img class="poster" src="images/p651_v_v8_az.jpg" alt="Casablanca"/></a></li>
         <li>Name: Casablanca</li>
         <li>Year: 1942 </li>
         <li>Type: Drama/Romance</li>
         <li>Rating: 9.6</li>
-        <li><a href="castlist.html">Cast List</a></li>  
-        <li><a href="writereview.html">Write a Review</a></li> 
-        <li><a href="review.html">All reviews</a></li>
-    </ul>
+    </fieldset>
+    <br />
+        <li  style="list-style-type:none"align="center">  <div onclick="modalShow('update')" class="selector update" align = "center">  Update</div></li>
+    <br />
+    <fieldset>
+        <ul style="list-style-type:none">
+            <li><a href="castlist.html">Cast List</a></li>  
+            <li><a href="writereview.html">Write a Review</a></li> 
+            <li><a href="review.html">All reviews</a></li>
+        </ul>
+    </fieldset>
+    </fieldset>
 </body>
-    
+<footer>
+    <div id="myModal" class="modal" style="display: none;">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <!-- <p>This is a modal where someone can create/update/delete an entry!</p> -->
+        </div>
+    </div>
+</footer>
 </html>
