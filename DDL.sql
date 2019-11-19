@@ -39,7 +39,7 @@ CREATE TABLE movie (
 
 LOCK TABLES movie WRITE;
 /*!40000 ALTER TABLE `movie` DISABLE KEYS */;
-INSERT INTO movie VALUES (1,'Casablanca', 1942, 'Drama/Romance','United States','102',NULL,NULL), (2, 'Looper', 2012, 'Drama/Fantasy', 'United States', '119', NULL, NULL);
+INSERT INTO movie VALUES (1,'Casablanca', 1942, 'Drama/Romance','United States','102',NULL,NULL), (2, 'Looper', '2012','Drama/Fantasy', 'United States', '119', NULL, NULL);
 /*!40000 ALTER TABLE `movie` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,16 +51,18 @@ DROP TABLE IF EXISTS review_movie_association;
 /*!40101 SET @saved_cs_client 	= @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE review_movie_association (
-	movie_review_id int unsigned NOT NULL AUTO_INCREMENT,
 	review_id int unsigned,
-	PRIMARY KEY (movie_review_id),
-	FOREIGN KEY (review_id) REFERENCES review(review_id)
+	movie_review_id int unsigned NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (review_id,movie_review_id),
+	KEY idx_fk_film_id (movie_review_id),
+	CONSTRAINT fk_review FOREIGN KEY (review_id) REFERENCES review (review_id) ON UPDATE CASCADE,
+	CONSTRAINT fk_movie FOREIGN KEY (movie_review_id) REFERENCES movie (movie_id) ON UPDATE CASCADE
 ) ENGINE=InnoDB AUTO_INCREMENT=201 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES review_movie_association WRITE;
 /*!40000 ALTER TABLE `review_movie_association` DISABLE KEYS */;
-INSERT INTO review_movie_association VALUES (1,1), (2,2);
+INSERT INTO review_movie_association VALUES (1,1), (2,1);
 /*!40000 ALTER TABLE `review_movie_association` ENABLE KEYS */;
 UNLOCK TABLES;
 
