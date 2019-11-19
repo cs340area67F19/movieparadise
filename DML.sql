@@ -24,6 +24,16 @@ select rating, username from movie
 INNER JOIN review_movie_association ON review_movie_association.movie_review_id= movie_id
 INNER JOIN review ON  review_movie_association.review_id = review.review_id
 INNER JOIN users ON review.user_id = users.user_id
+where movie_id = 1;
+
+--
+-- User review list
+--
+select movie.name, rating from users
+INNER JOIN review ON review.user_id = users.user_id
+INNER JOIN review_movie_association ON review_movie_association.review_id = review.review_id
+INNER JOIN movie ON review_movie_association.movie_review_id= movie_id
+where users.user_id = 1
 where movie_id = 1
 
 --
