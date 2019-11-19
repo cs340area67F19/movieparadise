@@ -2,10 +2,6 @@
 function modalShow(type) {
     $(".modal").show();
     popModal(type);
-
-    //$(".modal").click(function() {
-    //    $(".modalContents").remove();
-    //});
 }
 
 function modalHide(){
@@ -34,6 +30,12 @@ function createMod(){
     $(button).append(document.createTextNode("Create"));
     $(button).addClass("Button")
     $(modalContent).append(button)
+
+    var button2 = document.createElement("button");
+    $(button2).append(document.createTextNode("Cancel"));
+    $(button2).addClass("Button");
+    button2.setAttribute('onclick','modalHide();' + button2.getAttribute("onclick"));
+    $(modalContent).append(button2);
     $(modal).append(modalContent);
 }
 
@@ -61,6 +63,12 @@ function updateMod(){
     $(button).append(document.createTextNode("Update"));
     $(button).addClass("Button")
     $(modalContent).append(button)
+
+    var button2 = document.createElement("button");
+    $(button2).append(document.createTextNode("Cancel"));
+    $(button2).addClass("Button");
+    button2.setAttribute('onclick','modalHide();' + button2.getAttribute("onclick"));
+    $(modalContent).append(button2);
     $(modal).append(modalContent);
 }
 
@@ -79,6 +87,7 @@ function deleteMod(){
     var button2 = document.createElement("button");
     $(button2).append(document.createTextNode("Cancel"));
     $(button2).addClass("Button");
+    button2.setAttribute('onclick','modalHide();' + button2.getAttribute("onclick"));
     $(modalContent).append(button)
     $(modalContent).append(button2)
     $(modal).append(modalContent);
