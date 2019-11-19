@@ -16,6 +16,7 @@ a.navbar-brand{
 }
 
 .info-poster{
+    height: 40%;
     width: 40%;
 }
 
@@ -53,15 +54,15 @@ fieldset {
 }
 
 .create {
-    background-color: limegreen;
-}
+    background-color: #2ec3d0;
+}   
 
 .update {
-    background-color: royalblue;
+    background-color: #efea73;
 }
 
 .delete {
-    background-color: red;
+    background-color: #e74c3c;
 }
 
 .modal {

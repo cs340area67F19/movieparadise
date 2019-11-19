@@ -29,12 +29,12 @@ function createMod(){
 
 //Function to show the correct modal for updating
 function updateMod(){
-    var elems = ["Name","Year","Type","Rating"];
-    var defaults = ["Casablanca","1942","Drama/Romance","9.6"];
+    var elems = ["Name","Year","Type","Length","Rating"];
+    var defaults = ["Casablanca","1942","Drama/Romance","1h 42m","9.6"];
     var modal = document.getElementsByClassName("modal-content");
     var text = document.createTextNode("Enter information for a new movie")
     $(modal).append(text);
-
+    
     for(var i=0; i<4; i++){
         var input = document.createElement("input")
         input.setAttribute("Placeholder", elems[i])
