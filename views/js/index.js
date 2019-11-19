@@ -39,6 +39,7 @@ function createMod(){
 
 //Function to show the correct modal for updating
 function updateMod(){
+
     var elems = ["Name","Year","Type","Rating"];
     var defaults = ["Casablanca","1942","Drama/Romance","9.6"];
     
@@ -97,4 +98,3 @@ function popModal(type){
             break;
     }
 }
-
