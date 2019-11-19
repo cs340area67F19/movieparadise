@@ -39,7 +39,7 @@ CREATE TABLE movie (
 
 LOCK TABLES movie WRITE;
 /*!40000 ALTER TABLE `movie` DISABLE KEYS */;
-INSERT INTO movie VALUES (1,'Casablanca', 1942, 'Drama/Romance','United States','102',NULL,NULL), (2, 'Looper', '2012','Drama/Fantasy', 'United States', '119', NULL, NULL);
+INSERT INTO movie VALUES (1,'Casablanca', 1942, 'Drama/Romance','United States','102',NULL,NULL), (2, 'Looper', 2012,'Drama/Fantasy', 'United States', '119', NULL, NULL);
 /*!40000 ALTER TABLE `movie` ENABLE KEYS */;
 UNLOCK TABLES;
 
