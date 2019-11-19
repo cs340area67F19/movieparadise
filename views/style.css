@@ -45,7 +45,7 @@ fieldset {
     cursor: pointer;
     display: inline;
     cursor: pointer;
-    display: inline;
+    display: inline-flex;
     border: solid 1px black;
     border-radius: 5px;
     color: black;
