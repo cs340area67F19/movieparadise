@@ -1,3 +1,6 @@
+--This is about display and insert data for now
+
+
 --
 -- MovieList 
 --
