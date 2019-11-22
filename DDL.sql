@@ -62,7 +62,7 @@ CREATE TABLE review_movie_association (
 
 LOCK TABLES review_movie_association WRITE;
 /*!40000 ALTER TABLE `review_movie_association` DISABLE KEYS */;
-INSERT INTO review_movie_association VALUES (1,1), (2,1);
+INSERT INTO review_movie_association VALUES (1,1), (2,1), (3,2);
 /*!40000 ALTER TABLE `review_movie_association` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -85,7 +85,7 @@ CREATE TABLE review (
 
 LOCK TABLES review WRITE;
 /*!40000 ALTER TABLE `review` DISABLE KEYS */;
-INSERT INTO review VALUES (1, NOW(), 7.6, 1), (2, NOW(), 8.2, 2);
+INSERT INTO review VALUES (1, NOW(), 7.6, 1), (2, NOW(), 8.2, 2), (3, NOW(), 7.8, 1);
 /*!40000 ALTER TABLE `review` ENABLE KEYS */;
 UNLOCK TABLES;
 
